@@ -1,81 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>EVILEX - Better Future is Passionate With You </title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon1.png" rel="icon">
-    <link href="assets/img/favicon1.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-
-</head>
+{% extends 'header.html' %}
 
 <body>
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center " style="background-color:#ec1818;">
-        <div class="container d-flex align-items-center justify-content-between">
-
-            <h1 class="logo"><a href="index.html">EVILEX</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                    <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-                    <!--Drop down-->
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            <!-- .navbar -->
-
-        </div>
-    </header>
-    <!-- End Header -->
+    {% block body %}
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex justify-cntent-center align-items-center">
@@ -174,8 +103,8 @@
 
                 <div class="section-title">
                     <h2 class="title">About Us</h2>
-                    <p>We are a company that provides training services and distributes quality resources. We make sure our customers get the best quality service and our top priority is to become the first option of customers who need services to help
-                        them get their dream job.</p>
+                    <p>We are a company that provides training services and distributes quality resources. We make sure our customers get the best quality service and our top priority is to become the first option of customers who need services to help them
+                        get their dream job.</p>
                 </div>
 
                 <div class="row content">
@@ -183,7 +112,7 @@
                         <p>
                             We are committed to continuously improving the value we provide to jobseekers and employers. To deliver on this, we continue to evolve our product and service offerings to better facilitate the matching of jobseekers to employers.
                         </p>
-                        
+
                         <!-- <ul>
                             <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
                             <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
@@ -194,8 +123,8 @@
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <p>
                             With our understanding and insights on each market, as well our passion for technology, we provide jobseekers the best opportunities and deliver exceptional value to employers.
-                        </p>   
-                        
+                        </p>
+
                     </div>
                 </div>
 
@@ -214,7 +143,7 @@
 
                 <div class="center col-lg-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="assets/img/team/rafi.png" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="{{ url_for('static', filename='img/team/rafi.png ') }}" class="img-fluid" alt=""></div>
                         <div class="member-info">
                             <h4>Muhammad Rafi Pratomo</h4>
                             <span>Chief Executive Officer & Project Leader</span>
@@ -230,8 +159,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    
-                    
+
+
 
                     <!-- <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
                         <div class="member d-flex align-items-start">
@@ -253,12 +182,12 @@
 
                     <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/team/alan.png" class="img-fluid" alt=""></div>
+                            <div class="pic"><img src="{{ url_for('static', filename='img/team/alan.png') }}" class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Alan Kurniawan</h4>
                                 <span>Marketing Division</span>
                                 <p>We are what we repeatedly do.</p>
-                            
+
                                 <div class="social">
                                     <a href=""><i class="ri-twitter-fill"></i></a>
                                     <a href=""><i class="ri-facebook-fill"></i></a>
@@ -271,12 +200,12 @@
 
                     <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="400">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/team/kevin.png" class="img-fluid" alt=""></div>
+                            <div class="pic"><img src="{{ url_for('static', filename='img/team/kevin.png ') }}" class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Kevin Brema Tobing</h4>
                                 <span>Marketing Division</span>
                                 <p>The harder you work, the better you get.</p>
-                            
+
                                 <div class="social">
                                     <a href=""><i class="ri-twitter-fill"></i></a>
                                     <a href=""><i class="ri-facebook-fill"></i></a>
@@ -290,12 +219,12 @@
                     <div class="col-lg-6 align-items-center" data-aos="fade-up" data-aos-delay="100">
                         <br>
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/team/arina.jpeg" class="img-fluid" alt=""></div>
+                            <div class="pic"><img src="{{ url_for('static', filename='img/team/arina.jpeg  ') }}" class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Arina Sabilahaq</h4>
                                 <span>Development Team</span>
                                 <p>Don't stop now though - there's always more to learn!</p>
-                            
+
                                 <div class="social">
                                     <a href=""><i class="ri-twitter-fill"></i></a>
                                     <a href=""><i class="ri-facebook-fill"></i></a>
@@ -309,12 +238,12 @@
                     <div class="col-lg-6 align-items-center" data-aos="fade-up" data-aos-delay="100">
                         <br>
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/team/rendy.jpg" class="img-fluid" alt=""></div>
+                            <div class="pic"><img src=" {{ url_for('static', filename='img/team/rendy.jpg ') }}" class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Rahmandi Fitra Madenda</h4>
                                 <span>Development Team</span>
                                 <p>Hard Work beat talents when talents fails to work hard</p>
-                            
+
                                 <div class="social">
                                     <a href=""><i class="ri-twitter-fill"></i></a>
                                     <a href=""><i class="ri-facebook-fill"></i></a>
@@ -358,7 +287,7 @@
         <section id="why-us" class="why-us">
             <div class="container-fluid">
                 <div class=" align-items-stretch position-relative video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="fade-right">
-                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn mb-4"></a>
+                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn mb-4"></a>
                 </div>
                 <!-- <div class="row">
 
@@ -437,7 +366,7 @@
                     <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon-box">
                             <i class="bi bi-bar-chart"></i>
-                            <h4><a href="/TrainingCamp.html">TRAINING CAMP</a></h4>
+                            <h4><a href="{{url_for('camp')}}">TRAINING CAMP</a></h4>
                             <p>Get the skills you want with us.</p>
                         </div>
                     </div>
@@ -629,7 +558,7 @@
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="box">
                             <h3>Free</h3>
-                            <h4><sup>$</sup>0<span> / month</span></h4> 
+                            <h4><sup>$</sup>0<span> / month</span></h4>
                             <!-- <h4><sup>FREE</sup></h4> -->
                             <ul>
                                 <li>Aida dere</li>
@@ -927,15 +856,16 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src=" {{  url_for('static', filename='vendor/aos/aos.js ') }}"></script>
+    <script src=" {{  url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js ') }}"></script>
+    <script src="{{  url_for('static', filename='vendor/glightbox/js/glightbox.min.js ') }}"></script>
+    <script src=" {{  url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src=" {{  url_for('static', filename='vendor/swiper/swiper-bundle.min.js ') }}"></script>
+    <script src="{{  url_for('static', filename='vendor/php-email-form/validate.js  ') }}"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="{{  url_for('static', filename='js/main.js  ') }}"></script>
+    {% endblock %}
 
 </body>
 

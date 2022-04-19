@@ -1,0 +1,197 @@
+{% extends 'TrainingCamp.html' %} {% block content %}
+<section class="container mb-3">
+    <div class="row mt-5">
+        <!--Col Left-->
+        <div class="col-sm-3">
+            <div class="container d-flex ">
+                <span class="container-fluid span-1 pt-1">List of Classes</span>
+            </div>
+            <div class="container mt-4">
+                <span class="h6 initialism">CREATE</span>
+
+                <div class="" style="border-top: solid 1px #dcdee1;">
+                    <ul class="nav flex-column nav-pills ">
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="{{ url_for('animation') }}">Animation</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Creative Writting</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Film & Video</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Fine Art</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Graphic Design</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Illustration</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Music</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Photography</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">UI/UX Design</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Web Development</a>
+                        </li>
+                    </ul>
+                </div><br>
+                <span class="h6 initialism">BUILD</span>
+                <div style="border-top: solid 1px #dcdee1;">
+                    <ul class="nav flex-column nav-pills ">
+                        <li class="nav-item text-start" id="class-link">
+                            <a href="" class="nav-link ">Business Analytics</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Freelance & Entrepreneurship</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Leadership & Management</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Marketing</a>
+                        </li>
+                    </ul>
+                </div><br>
+                <span class="h6 initialism">THRIVE</span>
+                <div style="border-top: solid 1px #dcdee1;">
+                    <ul class="nav flex-column nav-pills ">
+                        <li class="nav-item text-start" id="class-link">
+                            <a href="" class="nav-link">Lifestyle</a>
+                        </li>
+                        <li class="nav-item text-start" id="class-link">
+                            <a class="nav-link " href="#">Productivity</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!--Col Right-->
+        <div class="col">
+            <!--Col-1-->
+            <div class="container rounded p-0 image-1">
+                <div class="jss15">
+                    <div class=" grad">
+                        <h2 class="typo-1">Online Classes</h2>
+                        <h3 class="typo-2">Find what fascinates you as you explore these online classes.
+
+                        </h3>
+                        <div class="mt-4 mb-2">
+                            <button class="btn btn-success">Get Started For Free</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--Setting filter (Not Working yet)-->
+            <div class="container mt-5" style="display: none;">
+
+                <p class="text-start">SORT BY</p>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                </div>
+
+                <button data-bs-toggle="collapse" data-bs-target="#demo">Collapsible</button>
+
+                <div id="demo" class="collapse">
+                    Lorem ipsum dolor text....
+                </div>
+
+
+            </div>
+
+            <!--Picture-->
+            <div class="container mt-5">
+
+                <div class="row">
+                    <div class="col">
+
+                        <iframe width="315" height="210" src="https://www.youtube.com/embed/1RT935tV9vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+                    </div>
+                    <div class="col">
+
+                        <iframe width="315" height="210" src="https://www.youtube.com/embed/ylkSYJb0cVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col">
+
+                        <iframe width="315" height="210" src="https://www.youtube.com/embed/gDmiCWcj4WE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+                    </div>
+                    <div class="col">
+
+                        <iframe width="315" height="210" src="https://www.youtube.com/embed/uDqjIdI4bF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col">
+
+                        <iframe width="315" height="210" src="https://www.youtube.com/embed/wt0EWKTKRi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+                    </div>
+                    <div class="col">
+                        <iframe width="315" height="210" src="https://www.youtube.com/embed/So5TPXVhoSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                    </div>
+
+                </div><br><br>
+                <div class="row">
+                    <div class="col">
+                        <div class="box">
+
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="box">
+
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="box">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+</section>
+{% endblock %}
